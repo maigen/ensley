@@ -548,13 +548,13 @@ select {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: #1279be;
+  color: #66cccc;
   text-decoration: none;
 }
 a:hover,
 a:focus,
 a:active {
-  color: #303030;
+  color: #66cccc;
 }
 a.button,
 a.button-minimal {
@@ -1320,10 +1320,10 @@ ul[id^="menu-social"] a[href*="youtube.com"]:before {
 }
 
 /* Header */
-.header-wrapper {
-  position: relative;
-  border-top: 48px solid #f8f8f8;
-}
+// .header-wrapper {
+//   position: relative;
+//   border-top: 48px solid #f8f8f8;
+// }
 .no-header-navigation .header-wrapper {
   border-top: 0;
 }
@@ -1832,7 +1832,7 @@ ul[id^="menu-social"] a[href*="youtube.com"]:before {
 .format-link .entry-title a:hover:after,
 .format-link .entry-title a:focus:after,
 .format-link .entry-title a:active:after {
-  color: #1279be;
+  color: #66cccc;
 }
 
 /* Post Thumbnail */
@@ -1925,7 +1925,7 @@ body[class*="front-page"] .hero .page-title {
 .entry-title a:hover,
 .entry-title a:focus,
 .entry-title a:active {
-  color: #1279be;
+  color: #66cccc;
 }
 
 /* Page Links */
@@ -1997,7 +1997,7 @@ body[class*="front-page"] .hero .page-title {
 .grid .entry-title a:hover,
 .grid .entry-title a:focus,
 .grid .entry-title a:active {
-  color: #1279be;
+  color: #66cccc;
 }
 
 /*--------------------------------------------------------------
@@ -2583,11 +2583,11 @@ div#jp-relatedposts {
   }
   .site-branding {
     float: left;
-    width: 480px;
+    width: 70%;
   }
-  .has-header-search .site-branding {
-    width: 374px;
-  }
+  // .has-header-search .site-branding {
+  //   width: 374px;
+  // }
   .content-area,
   .featured-page-area,
   .footer-widget-area,
@@ -2777,8 +2777,8 @@ div#jp-relatedposts {
   }
   .has-header-search .site-branding,
   .site-branding {
-    width: auto;
-    max-width: 412px;
+    width: 70%;
+    // max-width: 412px;
   }
   .header-navigation {
     max-width: 176px;
@@ -3142,7 +3142,7 @@ div#jp-relatedposts {
   }
   .has-header-search .site-branding,
   .site-branding {
-    max-width: 260px;
+    max-width: 70%;
   }
   .header-navigation {
     max-width: 580px;
@@ -3348,7 +3348,7 @@ div#jp-relatedposts {
   }
   .has-header-search .site-branding,
   .site-branding {
-    max-width: 540px;
+    max-width: 70%;
   }
   .header-navigation {
     max-width: 300px;

@@ -599,13 +599,13 @@ select {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: #1279be;
+  color: #66cccc;
   text-decoration: none; }
 
 a:hover,
 a:focus,
 a:active {
-  color: #303030; }
+  color: #66cccc; }
 
 a.button,
 a.button-minimal {
@@ -1357,10 +1357,6 @@ ul[id^="menu-social"] a[href*="youtube.com"]:before {
   margin: 0 auto; }
 
 /* Header */
-.header-wrapper {
-  position: relative;
-  border-top: 48px solid #f8f8f8; }
-
 .no-header-navigation .header-wrapper {
   border-top: 0; }
 
@@ -1851,7 +1847,7 @@ ul[id^="menu-social"] a[href*="youtube.com"]:before {
 .format-link .entry-title a:hover:after,
 .format-link .entry-title a:focus:after,
 .format-link .entry-title a:active:after {
-  color: #1279be; }
+  color: #66cccc; }
 
 /* Post Thumbnail */
 .post-thumbnail {
@@ -1941,7 +1937,7 @@ body[class*="front-page"] .hero .page-title {
 .entry-title a:hover,
 .entry-title a:focus,
 .entry-title a:active {
-  color: #1279be; }
+  color: #66cccc; }
 
 /* Page Links */
 .page-links {
@@ -2009,7 +2005,7 @@ body[class*="front-page"] .hero .page-title {
 .grid .entry-title a:hover,
 .grid .entry-title a:focus,
 .grid .entry-title a:active {
-  color: #1279be; }
+  color: #66cccc; }
 
 /*--------------------------------------------------------------
 12.0 Comments
@@ -2571,10 +2567,7 @@ div#jp-relatedposts {
 
   .site-branding {
     float: left;
-    width: 480px; }
-
-  .has-header-search .site-branding {
-    width: 374px; }
+    width: 70%; }
 
   .content-area,
   .featured-page-area,
@@ -2755,8 +2748,7 @@ div#jp-relatedposts {
 
   .has-header-search .site-branding,
   .site-branding {
-    width: auto;
-    max-width: 412px; }
+    width: 70%; }
 
   .header-navigation {
     max-width: 176px; }
@@ -3108,7 +3100,7 @@ div#jp-relatedposts {
 
   .has-header-search .site-branding,
   .site-branding {
-    max-width: 260px; }
+    max-width: 70%; }
 
   .header-navigation {
     max-width: 580px; }
@@ -3306,7 +3298,7 @@ div#jp-relatedposts {
 
   .has-header-search .site-branding,
   .site-branding {
-    max-width: 540px; }
+    max-width: 70%; }
 
   .header-navigation {
     max-width: 300px; }
@@ -3362,6 +3354,31 @@ div#jp-relatedposts {
   .hero.with-featured-image,
   body[class*="front-page"] .hero {
     padding: 180px 0; } }
-h1.site-title {
-  font-family: Impact, Helvetica, sans-serif;
-  color: #b7b7b7; }
+html {
+  font-size: 16px;
+  font-size: 1rem; }
+
+header#masthead {
+  background-color: #242418;
+  border-bottom: 2px solid #dddd55; }
+
+div#content {
+  background: url("http://localhost/ensley/wp-content/themes/edin/paper.png"); }
+
+a {
+  color: #66cccc; }
+
+.site-branding {
+  margin: 2em auto 0; }
+  .site-branding h1.site-title {
+    display: inline;
+    position: relative;
+    font: 2.5em 'Open Sans', Helvetica, sans-serif;
+    color: #dddd55;
+    font-weight: 100; }
+  .site-branding div#ensley-logo {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: url("http://localhost/ensley/wp-content/themes/edin/ensleye.png") no-repeat; }
