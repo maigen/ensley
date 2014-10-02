@@ -2,33 +2,96 @@ html {
     font-size: 16px;
     font-size: 1rem;
 }
-header#masthead {
-  background-color: #242418;
-  border-bottom: 2px solid #dddd55;
-}
-
-div#content {
-  background: url('http://localhost/ensley/wp-content/themes/edin/paper.png');
-}
-
-a {
-  color: #66cccc;
-}
-.site-branding {
-  margin: 2em auto 0;
-  h1.site-title {
-    display: inline;
-    position: relative;
-    font: 2.5em 'Open Sans', Helvetica, sans-serif;
-    color: #dddd55;
-    font-weight: 100;
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Open Sans', Helvetica, sans-serif;
+  a {
+    color: #66cccc; //Soft Teal 
+    background-color: transparent;
+    padding: 0;
+  }
+  div#page-background {
+    background: url('http://localhost/ensley/wp-content/themes/edin/paper.png');
+    width: 100%;
+    div.inner-body-wrap {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      outline: 5px solid rgba(50, 50, 50, 0.75);
+      background-color: #AEADAD; 
+    }
+    div.row-full-width {
+      background-color: #7d7d7d;
+      height: 50px;
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+    .content-wrapper {
+      max-width: 70%;
+      min-height: 1000px;
+    }
   }
 
-  div#ensley-logo {
-    display: inline-block;
-    float: left;
-    width: 100px;
-    height: 100px;
-    background: url('http://localhost/ensley/wp-content/themes/edin/ensleye.png') no-repeat;
+  #logo-centered-header {
+    width: 100%;
+    padding-top: 1em;
+    text-align: center;
+    background-color: #7d7d7d;
+    border-bottom: 2px solid #dddd55;
+    div.header-row {
+      border-bottom: 1px solid #686969;
+    }
+    h1.site-title {
+      display: inline;
+      vertical-align: middle;
+      position: relative;
+      font: 2.5em 'Open Sans', Helvetica, sans-serif;
+      color: #dddd55;
+      line-height: 2.5em;
+      font-weight: 100;
+      span { 
+        padding: 0 1em; 
+      }
+    }
+    #ensley-logo {
+      display: inline;
+      vertical-align: middle;
+      text-align: center;
+      width: auto;
+      height: auto;
+      z-index: 5;
+    }
+    .video-button-row {
+      height: 200px;
+    }
+    nav {
+      div.menu-primary {
+        margin: 2em auto;
+        ul#menu-primary_nav {
+          li {
+            display: inline-block;
+            color: #dddd55;
+            padding: 0.5em 0.90em;
+            margin: 0 2px;
+            border: 2px solid #dddd55;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+          li:hover {
+            color: #fff;
+            border: 2px solid #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .site-info {
+    text-align: center;
+    font-size: 9px;
+    color: #b7b7b7;
+    line-height: 0.75em;
   }
 }

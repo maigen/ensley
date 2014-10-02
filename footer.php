@@ -15,9 +15,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-wrapper clear">
 			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'edin' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'edin' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( __( 'Theme: %1$s by %2$s.', 'edin' ), 'Edin', '<a href="http://wordpress.com/themes/" rel="designer">WordPress.com</a>' ); ?>
+				Copyright @2014 Ensley Orthodontics
 			</div><!-- .site-info -->
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
 				<nav class="footer-navigation" role="navigation">
@@ -32,7 +30,9 @@
 			<?php endif; ?>
 		</div><!-- .footer-wrapper -->
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+</div> <!-- #inner-body-wrap -->
+<!-- </div>  --><!-- .off-canvas-nav -->
+</div><!-- #page-background -->
 
 <?php wp_footer(); ?>
 

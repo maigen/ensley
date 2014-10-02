@@ -62,29 +62,6 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-/*
-Theme Name: Edin
-Theme URI: https://wordpress.com/themes/edin/
-Author: Automattic
-Author URI: https://wordpress.com/themes/
-Description: Edin is a modern responsive business and corporate theme that helps you to create a strong--yet beautiful--online presence for your business.
-Version: 1.0.7
-License: GNU General Public License
-License URI: license.txt
-Text Domain: edin
-Domain Path: /languages/
-Tags: blue, gray, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-Edin is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-and Blueprint http://www.blueprintcss.org/
-*/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -1342,8 +1319,8 @@ ul[id^="menu-social"] a[href*="youtube.com"]:before {
 .menu-primary,
 .search-wrapper .search-form,
 .secondary-navigation {
-  padding-right: 24px;
-  padding-left: 24px; }
+  padding-right: inherit;
+  padding-left: inherit; }
 
 .content-area,
 .featured-page-area,
@@ -1499,9 +1476,6 @@ ul[id^="menu-social"] a[href*="youtube.com"]:before {
 
 .grid-area .hentry {
   margin-bottom: 0; }
-
-.content-wrapper + .grid-area {
-  background: #f8f8f8; }
 
 /* Widget Area */
 .widget-area {
@@ -2866,7 +2840,6 @@ div#jp-relatedposts {
     clear: both;
     padding: 0;
     margin: 0;
-    border-top: 1px solid #f8f8f8;
     color: inherit; }
 
   .navigation-classic .primary-navigation .menu-toggle {
@@ -2879,7 +2852,7 @@ div#jp-relatedposts {
     float: left; }
 
   .navigation-classic .primary-navigation .menu-primary > ul > li:hover {
-    background: #1279be;
+    background: transparent;
     color: #fff; }
 
   .navigation-classic .primary-navigation .menu-primary > ul > li:nth-of-type(3n+1) {
@@ -2887,7 +2860,7 @@ div#jp-relatedposts {
 
   .navigation-classic .primary-navigation .menu-primary > ul > li.current-menu-item > a,
   .navigation-classic .primary-navigation .menu-primary > ul > li.current_page_item > a {
-    background: #1279be;
+    background: transparent;
     color: #fff;
     font-style: normal; }
 
@@ -2907,7 +2880,7 @@ div#jp-relatedposts {
   .navigation-classic .primary-navigation .menu-primary > ul > li > a:hover,
   .navigation-classic .primary-navigation .menu-primary > ul > li > a:focus,
   .navigation-classic .primary-navigation .menu-primary > ul > li > a:active {
-    background: #1279be;
+    background: transparent;
     color: #fff; }
 
   .navigation-classic .primary-navigation ul ul {
@@ -2926,7 +2899,6 @@ div#jp-relatedposts {
     top: 1px;
     left: 8px;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid #1279be;
     border-left: 8px solid transparent; }
 
   .navigation-classic .primary-navigation ul ul ul {
@@ -2943,18 +2915,14 @@ div#jp-relatedposts {
     top: 16px;
     left: 0;
     border-top: 8px solid transparent;
-    border-right-color: #1279be;
     border-bottom-color: transparent;
     border-left: 0; }
 
   .navigation-classic .primary-navigation ul ul li {
     padding: 12px 24px 0 24px;
     width: 260px;
-    background: #1279be;
+    background: transparent;
     text-transform: none; }
-
-  .navigation-classic .primary-navigation ul ul li:last-of-type {
-    border-bottom: 12px solid #1279be; }
 
   .navigation-classic .primary-navigation ul ul li:hover > ul {
     left: 100%; }
@@ -2982,18 +2950,9 @@ div#jp-relatedposts {
     position: relative;
     font-weight: bold; }
 
-  .navigation-classic .primary-navigation li.current-menu-item > a,
-  .navigation-classic .primary-navigation li.current_page_item > a {
-    border-bottom-color: #fff; }
-
   .navigation-classic .primary-navigation a {
     margin: 0;
     color: inherit; }
-
-  .navigation-classic .primary-navigation a:hover,
-  .navigation-classic .primary-navigation a:focus,
-  .navigation-classic .primary-navigation a:active {
-    border-bottom-color: #fff; }
 
   .navigation-classic .primary-navigation .menu-item-has-children:before {
     position: absolute;
@@ -3001,7 +2960,7 @@ div#jp-relatedposts {
     top: 50%;
     right: 0;
     margin-top: -0.6em;
-    color: #1279be;
+    color: inherit;
     content: "\f431";
     display: inline-block;
     width: 1em;
@@ -3038,25 +2997,23 @@ div#jp-relatedposts {
     padding: 0;
     margin: 0;
     width: 100%;
-    background: #f8f8f8; }
+    background: transparent; }
 
   .navigation-classic .secondary-navigation ul {
     text-align: right; }
 
   .navigation-classic .secondary-navigation li {
-    color: #303030;
+    color: #fff;
     font-weight: bold; }
 
   .navigation-classic .secondary-navigation li.current-menu-item a,
   .navigation-classic .secondary-navigation li.current_page_item a {
-    color: inherit;
-    border-bottom-color: #303030; }
+    color: inherit; }
 
   .navigation-classic .secondary-navigation a:hover,
   .navigation-classic .secondary-navigation a:focus,
   .navigation-classic .secondary-navigation a:active {
-    border-bottom-color: #1279be;
-    color: #1279be; }
+    color: inherit; }
 
   .navigation-classic .primary-navigation .dropdown-toggle {
     display: none; }
@@ -3281,7 +3238,7 @@ div#jp-relatedposts {
   .navigation-default .menu-primary,
   .navigation-default .secondary-navigation,
   .search-wrapper .search-form {
-    width: 1110px; }
+    width: 1086px; }
 
   .hero-wrapper,
   .hero .hentry,
@@ -3358,27 +3315,74 @@ html {
   font-size: 16px;
   font-size: 1rem; }
 
-header#masthead {
-  background-color: #242418;
-  border-bottom: 2px solid #dddd55; }
-
-div#content {
-  background: url("http://localhost/ensley/wp-content/themes/edin/paper.png"); }
-
-a {
-  color: #66cccc; }
-
-.site-branding {
-  margin: 2em auto 0; }
-  .site-branding h1.site-title {
-    display: inline;
-    position: relative;
-    font: 2.5em 'Open Sans', Helvetica, sans-serif;
-    color: #dddd55;
-    font-weight: 100; }
-  .site-branding div#ensley-logo {
-    display: inline-block;
-    float: left;
-    width: 100px;
-    height: 100px;
-    background: url("http://localhost/ensley/wp-content/themes/edin/ensleye.png") no-repeat; }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Helvetica, sans-serif; }
+  body a {
+    color: #66cccc;
+    background-color: transparent;
+    padding: 0; }
+  body div#page-background {
+    background: url("http://localhost/ensley/wp-content/themes/edin/paper.png");
+    width: 100%; }
+    body div#page-background div.inner-body-wrap {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      outline: 5px solid rgba(50, 50, 50, 0.75);
+      background-color: #AEADAD; }
+    body div#page-background div.row-full-width {
+      background-color: #7d7d7d;
+      height: 50px;
+      border: 0;
+      margin: 0;
+      padding: 0; }
+    body div#page-background .content-wrapper {
+      max-width: 70%;
+      min-height: 1000px; }
+  body #logo-centered-header {
+    width: 100%;
+    padding-top: 1em;
+    text-align: center;
+    background-color: #7d7d7d;
+    border-bottom: 2px solid #dddd55; }
+    body #logo-centered-header div.header-row {
+      border-bottom: 1px solid #686969; }
+    body #logo-centered-header h1.site-title {
+      display: inline;
+      vertical-align: middle;
+      position: relative;
+      font: 2.5em 'Open Sans', Helvetica, sans-serif;
+      color: #dddd55;
+      line-height: 2.5em;
+      font-weight: 100; }
+      body #logo-centered-header h1.site-title span {
+        padding: 0 1em; }
+    body #logo-centered-header #ensley-logo {
+      display: inline;
+      vertical-align: middle;
+      text-align: center;
+      width: auto;
+      height: auto;
+      z-index: 5; }
+    body #logo-centered-header .video-button-row {
+      height: 200px; }
+    body #logo-centered-header nav div.menu-primary {
+      margin: 2em auto; }
+      body #logo-centered-header nav div.menu-primary ul#menu-primary_nav li {
+        display: inline-block;
+        color: #dddd55;
+        padding: 0.5em 0.90em;
+        margin: 0 2px;
+        border: 2px solid #dddd55;
+        font-weight: bold;
+        text-transform: uppercase; }
+      body #logo-centered-header nav div.menu-primary ul#menu-primary_nav li:hover {
+        color: #fff;
+        border: 2px solid #fff; }
+  body .site-info {
+    text-align: center;
+    font-size: 9px;
+    color: #b7b7b7;
+    line-height: 0.75em; }
