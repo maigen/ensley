@@ -3365,7 +3365,7 @@ body {
       width: 100%;
       background: url("http://localhost/ensley/wp-content/themes/edin/smiling.jpg") no-repeat;
       border-top: 8px solid #585858;
-      border-bottom: 7px solid #7d7d7d;
+      border-bottom: 7px solid #585858;
       background-size: 100%;
       z-index: -1; }
       body #logo-centered-header #banner-image .banner-row h1 {
@@ -3388,6 +3388,22 @@ body {
         body #logo-centered-header nav.primary-navigation div.menu-primary ul#menu-primary_nav li:hover {
           color: #fff;
           border: 2px solid #fff; }
+  body #video {
+    height: 251px;
+    width: auto;
+    float: left;
+    display: block; }
+    body #video iframe {
+      margin: 1em 1em 1em 5em;
+      text-align: center; }
+  body #things {
+    display: inline-block;
+    height: 260px;
+    width: 40%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin: 1em 1em 1em 5%; }
   body .site-info {
     text-align: center;
     font-size: 12px;
