@@ -2866,7 +2866,7 @@ div#jp-relatedposts {
 @media screen and (min-width: 1020px) {
   /* Navigation Default */
   .navigation-default .primary-navigation .menu-primary > ul > li {
-    margin-right: 60px;
+    // margin-right: 60px;
     width: 260px;
   }
   .navigation-default .primary-navigation .menu-primary > ul > li:nth-of-type(3n+3) {
@@ -2881,7 +2881,6 @@ div#jp-relatedposts {
     clear: both;
     padding: 0;
     margin: 0;
-    // border-top: 1px solid #f8f8f8;
     color: inherit;
   }
   .navigation-classic .primary-navigation .menu-toggle {
@@ -2911,10 +2910,10 @@ div#jp-relatedposts {
     font-size: 1.5em;
   }
   .navigation-classic .primary-navigation .menu-primary > ul > li.menu-item-has-children > a {
-    padding-right: 3em;
+    // padding-right: 3em;
   }
   .navigation-classic .primary-navigation .menu-primary > ul > li > a {
-    padding: 12px 24px;
+    // padding: 12px 24px;
     border-bottom: 0;
     font-size: 1.125em;
     line-height: 1.33333em;
@@ -2963,7 +2962,7 @@ div#jp-relatedposts {
     border-left: 0;
   }
   .navigation-classic .primary-navigation ul ul li {
-    padding: 12px 24px 0 24px;
+    // padding: 12px 24px 0 24px;
     width: 260px;
     background: transparent;
     text-transform: none;

@@ -19,7 +19,7 @@ body {
       margin-left: auto;
       margin-right: auto;
       outline: 5px solid rgba(50, 50, 50, 0.75);
-      background-color: #AEADAD; 
+      background-color: #7d7d7d; 
     }
     div.row-full-width {
       background-color: #7d7d7d;
@@ -29,16 +29,13 @@ body {
     }
     .content-wrapper {
       max-width: 70%;
-      min-height: 1000px;
     }
   }
 
   #logo-centered-header {
     width: 100%;
-    padding-top: 1em;
     text-align: center;
     background-color: #7d7d7d;
-    border-bottom: 2px solid #dddd55;
     div.header-row {
       border-bottom: 1px solid #686969;
     }
@@ -55,6 +52,7 @@ body {
       }
     }
     #ensley-logo {
+      margin: 0.5em auto;
       display: inline;
       vertical-align: middle;
       text-align: center;
@@ -71,6 +69,8 @@ body {
       width: 100%;
       background: url('http://localhost/ensley/wp-content/themes/edin/smiling.jpg') no-repeat;
       // opacity: 0.7;
+      border-top: 8px solid #585858;
+      border-bottom: 7px solid #7d7d7d;
       background-size: 100%;
       z-index: -1;
       .banner-row h1 { 
@@ -81,16 +81,17 @@ body {
         z-index: 4;
         }
     }
-    nav {
+    nav.primary-navigation {
+      width: 100% !important;
       div.menu-primary {
-        margin: 2em auto;
         ul#menu-primary_nav {
+          width: 100% !important;
           li {
             display: inline-block;
             color: #dddd55;
-            padding: 0.5em 0.90em;
-            margin: 0 2px;
-            border: 2px solid #dddd55;
+            padding: 0.5em 0.50em;
+            margin: 1em 3px;
+            border: 3px solid #dddd55;
             font-weight: bold;
             text-transform: uppercase;
           }
@@ -105,9 +106,14 @@ body {
 
   .site-info {
     text-align: center;
-    font-size: 9px;
-    color: #b7b7b7;
+    font-size: 12px;
+    color: #AEADAD;
     line-height: 0.75em;
+  }
+
+  footer.site-footer {
+    background: #7d7d7d;
+    border-top: 1px solid #686969;
   }
 
 

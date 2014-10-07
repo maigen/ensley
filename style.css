@@ -2826,7 +2826,6 @@ div#jp-relatedposts {
 @media screen and (min-width: 1020px) {
   /* Navigation Default */
   .navigation-default .primary-navigation .menu-primary > ul > li {
-    margin-right: 60px;
     width: 260px; }
 
   .navigation-default .primary-navigation .menu-primary > ul > li:nth-of-type(3n+3) {
@@ -2868,11 +2867,7 @@ div#jp-relatedposts {
     right: 0.5em;
     font-size: 1.5em; }
 
-  .navigation-classic .primary-navigation .menu-primary > ul > li.menu-item-has-children > a {
-    padding-right: 3em; }
-
   .navigation-classic .primary-navigation .menu-primary > ul > li > a {
-    padding: 12px 24px;
     border-bottom: 0;
     font-size: 1.125em;
     line-height: 1.33333em; }
@@ -2919,7 +2914,6 @@ div#jp-relatedposts {
     border-left: 0; }
 
   .navigation-classic .primary-navigation ul ul li {
-    padding: 12px 24px 0 24px;
     width: 260px;
     background: transparent;
     text-transform: none; }
@@ -3331,21 +3325,18 @@ body {
       margin-left: auto;
       margin-right: auto;
       outline: 5px solid rgba(50, 50, 50, 0.75);
-      background-color: #AEADAD; }
+      background-color: #7d7d7d; }
     body div#page-background div.row-full-width {
       background-color: #7d7d7d;
       height: 50px;
       margin: 0;
       padding: 0; }
     body div#page-background .content-wrapper {
-      max-width: 70%;
-      min-height: 1000px; }
+      max-width: 70%; }
   body #logo-centered-header {
     width: 100%;
-    padding-top: 1em;
     text-align: center;
-    background-color: #7d7d7d;
-    border-bottom: 2px solid #dddd55; }
+    background-color: #7d7d7d; }
     body #logo-centered-header div.header-row {
       border-bottom: 1px solid #686969; }
     body #logo-centered-header h1.site-title {
@@ -3359,6 +3350,7 @@ body {
       body #logo-centered-header h1.site-title span {
         padding: 0 1em; }
     body #logo-centered-header #ensley-logo {
+      margin: 0.5em auto;
       display: inline;
       vertical-align: middle;
       text-align: center;
@@ -3372,6 +3364,8 @@ body {
       height: 450px;
       width: 100%;
       background: url("http://localhost/ensley/wp-content/themes/edin/smiling.jpg") no-repeat;
+      border-top: 8px solid #585858;
+      border-bottom: 7px solid #7d7d7d;
       background-size: 100%;
       z-index: -1; }
       body #logo-centered-header #banner-image .banner-row h1 {
@@ -3379,24 +3373,29 @@ body {
       body #logo-centered-header #banner-image .banner-row h1, body #logo-centered-header #banner-image h3 {
         color: #fff;
         z-index: 4; }
-    body #logo-centered-header nav div.menu-primary {
-      margin: 2em auto; }
-      body #logo-centered-header nav div.menu-primary ul#menu-primary_nav li {
-        display: inline-block;
-        color: #dddd55;
-        padding: 0.5em 0.90em;
-        margin: 0 2px;
-        border: 2px solid #dddd55;
-        font-weight: bold;
-        text-transform: uppercase; }
-      body #logo-centered-header nav div.menu-primary ul#menu-primary_nav li:hover {
-        color: #fff;
-        border: 2px solid #fff; }
+    body #logo-centered-header nav.primary-navigation {
+      width: 100% !important; }
+      body #logo-centered-header nav.primary-navigation div.menu-primary ul#menu-primary_nav {
+        width: 100% !important; }
+        body #logo-centered-header nav.primary-navigation div.menu-primary ul#menu-primary_nav li {
+          display: inline-block;
+          color: #dddd55;
+          padding: 0.5em 0.50em;
+          margin: 1em 3px;
+          border: 3px solid #dddd55;
+          font-weight: bold;
+          text-transform: uppercase; }
+        body #logo-centered-header nav.primary-navigation div.menu-primary ul#menu-primary_nav li:hover {
+          color: #fff;
+          border: 2px solid #fff; }
   body .site-info {
     text-align: center;
-    font-size: 9px;
-    color: #b7b7b7;
+    font-size: 12px;
+    color: #AEADAD;
     line-height: 0.75em; }
+  body footer.site-footer {
+    background: #7d7d7d;
+    border-top: 1px solid #686969; }
   @media screen and (max-width: 640px) {
     body h1.site-title {
       display: none; } }
