@@ -7,7 +7,11 @@
 		<div class="footer-wrapper clear">
 
 			<div class="site-info">
-				Copyright @2014 Ensley Orthodontics
+				<?php
+				$post_id = 13;
+				$queried_post = get_post($post_id);
+				echo $queried_post->post_content;
+				?>
 			</div><!-- .site-info -->
 			<!-- <?php if ( has_nav_menu( 'footer' ) ) : ?> -->
 				<!-- <nav class="footer-navigation" role="navigation"> -->
