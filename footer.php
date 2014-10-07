@@ -22,7 +22,7 @@
 			<!-- <?php endif; ?> -->
 
 		</div><!-- .footer-wrapper -->
-	</footer><!-- #colophon -->
+	</footer><!-- .site-footer -->
 
 </div> <!-- #inner-body-wrap -->
 <!-- </div>  --><!-- .off-canvas-nav -->
