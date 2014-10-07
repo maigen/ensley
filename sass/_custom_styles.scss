@@ -23,7 +23,7 @@ body {
     }
     div.row-full-width {
       background-color: #7d7d7d;
-      height: 50px;
+      height: 25px;
       margin: 0;
       padding: 0;
     }
@@ -60,10 +60,6 @@ body {
       height: auto;
       z-index: 5;
     }
-    .video-button-row {
-      height: 200px;
-      background-color: #464646;
-    }
     #banner-image {
       height: 450px;
       width: 100%;
@@ -77,11 +73,16 @@ body {
         padding-top: 2em;
         }
       .banner-row h1, h3 { 
-        color: #fff; 
+        color: #464646; 
         z-index: 4;
+        margin-right: 30px;
+        text-align: right;
         }
     }
     nav.primary-navigation {
+      background-color: #585858;
+      border-top: 6px solid #3f3f3f;
+      border-bottom: 7px solid #6a6a6a;
       width: 100% !important;
       div.menu-primary {
         ul#menu-primary_nav {
@@ -103,24 +104,37 @@ body {
       }
     }
   }
+  .video-button-row {
+    height: auto;
+    background-color: #464646;
+  }
   #video {
-    height: 251px;
     width: auto;
     float: left;
     display: block;
+    margin: 2em 1em 1em 10em;
     iframe {
-      margin: 1em 1em 1em 5em;
+      border: 4px solid #dddd55;
       text-align: center;
     }
   }
   #things {
     display: inline-block;
-    height: 260px;
+    height: 200px;
     width: 40%;
     text-align: center;
-    background-color: #000;
-    color: #fff;
-    margin: 1em 1em 1em 5%;
+    vertical-align: middle;
+    margin: 1em;
+    .button-patient-login, .button-new-patient {
+      color: #dddd55;
+      padding: 0.75em 0.5em;
+      margin: 1em;
+      border: 3px solid #dddd55;
+      background-color: #464646;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
   }
 
   .site-info {
