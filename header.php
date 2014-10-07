@@ -29,7 +29,7 @@
 				get_template_part( 'partials/header', 'index' ); 
 			} ?> <!-- end slider -->
 
-				<div class="header-wrapper clear">
+				<div class="header-wrapper">
 					<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) ) : ?>
 						<div id="site-navigation" class="header-navigation">
 							<button class="menu-toggle"><?php _e( 'Menu', 'edin' ); ?></button>
