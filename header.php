@@ -1,12 +1,4 @@
-<?php
-/**
- * The Header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="content">
- *
- * @package Edin
- */
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -27,21 +19,17 @@
 				<div class="header-row"><br></div>
 				<div class="header-row">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<h1 class="site-title"><span class="ensley">Ensley</span></h1>
-						<img src="http://localhost/ensley/wp-content/themes/edin/ensleye.png" id="ensley-logo">  
-						<h1 class="site-title"><span class="ortho"> Ortho</span></h1> 
+						<img src="http://localhost/ensley/wp-content/themes/edin/ensley-ortho-green.png" id="ensley-logo">  
 					</a>
 				</div>
 			<div class="row-full-width header-row"></div> <!-- allows a space with dividing lines -->
-			<div class="row collapse" id="banner-image">
-				<div class="banner-row"><h1>Love. Your. Smile.</h1></div>
-				<div class="banner-row"><h3>We want to change how people feel about their smile.</h3></div>
-			</div>
-			<!-- <div class="header-row"></div> -->
-			<div class="video-button-row"></div>
-			<div class="header-row"></div>
-				<div class="header-wrapper clear">
 
+			<!-- If on home page, displays slider -->
+			<?php if ( is_home() ) {
+				get_template_part( 'partials/header', 'index' ); 
+			} ?> <!-- end slider -->
+
+				<div class="header-wrapper clear">
 					<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) ) : ?>
 						<div id="site-navigation" class="header-navigation">
 							<button class="menu-toggle"><?php _e( 'Menu', 'edin' ); ?></button>
