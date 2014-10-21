@@ -1,0 +1,18 @@
+//small screens 
+@media (max-width: 640px) {
+  //all small screen styling goes here
+  body {
+    #page-background {
+      div.inner-body-wrap {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    #banner-image {
+      display: none;
+    }
+    #video-button-row {
+      display: none;
+    }
+  }  
+}
