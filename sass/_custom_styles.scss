@@ -1,77 +1,105 @@
+
+@font-face {
+    font-family: 'Futura-Light';
+    src: url('./FuturaLT-Light.ttf');
+}
+@font-face {
+    font-family: 'Futura-Oblique';
+    src: url('./FuturaLT-Oblique.ttf');
+}
+@font-face {
+    font-family: 'Futura-CondensedLight';
+    src: url('./FuturaLT-CondensedLight.ttf');
+}
+@font-face {
+  font-family: 'Memphis';
+  src: url('./MemphisLTStd-Light.otf')
+}
 html {
     font-size: 16px;
-    font-size: 1rem;
+    font-size: 1em;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family:'Open Sans', Helvetica, sans-serif;
+  font-family: 'Memphis', Times, serif;
+  background: url('paper.png');
   a {
     color: #66cccc; //Soft Teal 
     background-color: transparent;
     padding: 0;
   }
-  div#page-background {
-    background: url('http://localhost/ensley/wp-content/themes/edin/paper.png');
-    width: 100%;
+
+//BODY BACKGROUND
     div.inner-body-wrap {
-      max-width: 70%;
-      margin-left: auto;
-      margin-right: auto;
+      @media (min-width: 1024px) {
+        margin: 0 8%;
+      }
+      @media (min-width: 650px) and (max-width: 1023px) {
+        margin: 0;
+      }
       outline: 5px solid rgba(50, 50, 50, 0.75);
       background-color: #7d7d7d; 
     }
+
+//BODY ELEMENTS
     div.row-full-width {
       background-color: #7d7d7d;
-      height: 25px;
+      height: 1.5em;
       margin: 0;
       padding: 0;
     }
     .content-wrapper {
       max-width: 70%;
     }
-  }
 
+  #logo-centered-header > nav > div { margin: 0;}
   #logo-centered-header {
     width: 100%;
     text-align: center;
     background-color: #7d7d7d;
     div.header-row {
       border-bottom: 1px solid #686969;
+      padding: 0 4%;
     }
-    h1.site-title {
-      display: inline;
-      vertical-align: middle;
-      position: relative;
-      font: 2.5em 'Open Sans', Helvetica, sans-serif;
-      color: #dddd55;
-      line-height: 2.5em;
-      font-weight: 100;
-      span { 
-        padding: 0 1em; 
-      }
-    }
-    #ensley-logo {
-      margin: 0.5em auto;
+    .ensley-logo {
+      background: url('ensley-orthodontics.png') 50% 50% no-repeat;
+      width: 100%;
+      height: 108px;
       display: inline;
       vertical-align: middle;
       text-align: center;
-      width: auto;
-      height: auto;
       z-index: 5;
+      border: 1px solid #585858;
+      @media (min-width: 350px) and (max-width: 899px) {
+        background-size: contain;
+      }
+      @media (max-width: 349px) {
+        display: none;
+      }
     }
     #banner-image {
-      height: 450px;
+      height: 25em;
       width: 100%;
-      background: url('http://localhost/ensley/wp-content/themes/edin/smiling.jpg') no-repeat;
-      // opacity: 0.7;
+      background: url('smiling.jpg') 50% 50% no-repeat;
+      background-size: cover;
       border-top: 8px solid #585858;
       border-bottom: 7px solid #585858;
-      background-size: 100%;
+      // background-size: 100%;
       z-index: -1;
       .banner-row h1 { 
         padding-top: 2em;
-        }
+        max-width: 500px;
+        font-size: 200%;
+        float: right;
+        font-family: Futura-Light, Helvetica, Arial, sans-serif;
+      }
+      .banner-row h3 {
+        font-size: 100%;
+        max-width: 500px;
+        float: right;
+        font-family: Futura-Light, Helvetica, Arial, sans-serif;
+      }
       .banner-row h1, h3 { 
         color: #464646; 
         z-index: 4;
@@ -83,22 +111,31 @@ body {
       background-color: #585858;
       border-top: 6px solid #3f3f3f;
       border-bottom: 7px solid #6a6a6a;
-      width: 100% !important;
+      // width: 100% !important;
       div.menu-primary {
+        margin: 0 5% !important;
         ul#menu-primary_nav {
-          width: 100% !important;
-          li {
+           a {
             display: inline-block;
+            background-color: #464646;            
             color: #dddd55;
-            padding: 0.5em 0.50em;
-            margin: 1em 3px;
-            border: 3px solid #dddd55;
-            font-weight: bold;
+            padding: 0.5em;
+            margin: 0.5em 0.25em;
+            border: 2px solid #dddd55;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            font-weight: 100;
+            font-family: Futura-CondensedLight, Helvetica, Arial, sans-serif;
             text-transform: uppercase;
           }
-          li:hover {
+          a:hover {
             color: #fff;
             border: 2px solid #fff;
+            -webkit-box-shadow: inset 5px 5px 5px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: inset 5px 5px 5px 0px rgba(0,0,0,0.5);
+            box-shadow: inset 5px 5px 5px 0px rgba(0,0,0,0.5);
           }
         }
       }
@@ -106,30 +143,37 @@ body {
   }
   .video-button-row {
     height: auto;
+    width: 100%;
     background-color: #464646;
   }
   #video {
-    width: auto;
+    width: 50%;
     float: left;
     display: block;
-    margin: 2em 1em 1em 10em;
+    padding: 2em 1em 1em 10em;
     iframe {
-      border: 4px solid #dddd55;
+      width:400px;
+      height: 225px;
       text-align: center;
     }
   }
   #things {
     display: inline-block;
     height: 200px;
-    width: 40%;
+    width: 30%;
     text-align: center;
     vertical-align: middle;
-    margin: 1em;
+    padding: 1em;
     .button-patient-login, .button-new-patient {
       color: #dddd55;
       padding: 0.75em 0.5em;
       margin: 1em;
       border: 3px solid #dddd55;
+      font-family: Futura-Light, Helvetica, sans-serif;
+      border-radius: 10px;
+      -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+      box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
       background-color: #464646;
       font-weight: bold;
       font-size: 1.5em;
@@ -149,10 +193,4 @@ body {
     border-top: 1px solid #686969;
   }
 
-
-  @media screen and (max-width: 640px) {
-    h1.site-title {
-      display: none;
-    }
-  }
 }

@@ -6,34 +6,33 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page-background" >
+<div class="small-12 columns" id="page-background" >
 <!-- 	<div class="off-canvas-wrap" data-offcanvas> -->
-		<div class="inner-body-wrap">
+		<div class="small-12 columns inner-body-wrap">
 			<header id="logo-centered-header">
 				<div class="header-row"><br></div>
 				<div class="header-row">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="http://localhost/ensley/wp-content/themes/edin/ensley-ortho-green.png" id="ensley-logo">  
+						<img class="ensley-logo"/>  
 					</a>
 				</div>
 			<div class="row-full-width header-row"></div> <!-- allows a space with dividing lines -->
 
 			<!-- If on home page, displays slider -->
-			<?php if ( is_home() ) {
+			<?php if ( is_front_page() ) {
 				get_template_part( 'partials/header', 'index' ); 
 			} ?> <!-- end slider -->
 
-				<div class="header-wrapper">
+				<div class="small-12 columns header-wrapper">
 					<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) ) : ?>
 						<div id="site-navigation" class="header-navigation">
 							<button class="menu-toggle"><?php _e( 'Menu', 'edin' ); ?></button>
-							<div class="navigation-wrapper clear">
+							<div class="medium-12 columns navigation-wrapper clear">
 								<?php if ( has_nav_menu( 'secondary' ) ) : ?>
 									<nav class="secondary-navigation" role="navigation">
 										<?php
